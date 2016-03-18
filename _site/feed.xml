@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web / Tech / Beer blog</title>
+    <description>A Blog about web technologies, code, server applications, beer, etc/</description>
+    <link>http://fridgerator.github.io/</link>
+    <atom:link href="http://fridgerator.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 18 Mar 2016 18:33:35 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2016 18:33:35 -0500</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Goodbye Dropbox and Spotify, Hello ownCloud</title>
+        <description>&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;I already pay $20 a month for two Spotify accounts (one for me and my wife) and now my dropbox is getting full. &amp;nbsp;Instead of dishing out the $30 a month I decided to check out other options first. &amp;nbsp;I came across &lt;a href=&quot;http://lifehacker.com/5993596/how-to-set-up-your-own-private-cloud-storage-service-in-five-minutes-with-owncloud&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt; article at lifehacker.com which sparked my attention. &amp;nbsp;I did some more digging around and read quite a bit about &lt;a href=&quot;http://owncloud.org/&quot; target=&quot;_blank&quot;&gt;ownCloud&lt;/a&gt; that sounded right up my alley other than the fact that its written in php... boooooo.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;I also, had been previously looking into getting a VPS but could never think of a good enough use for one to justify the cost. &amp;nbsp;&lt;a href=&quot;http://backupsy.com/&quot;&gt;Backupsy.com&lt;/a&gt; is a VPS configured for higher storage options (base level is 250GB) AND you can get it for $5 a month. &amp;nbsp;For me this sounded like a couple of hours of work for a $25 a month savings and WAY more customization and options.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;Visit &lt;a href=&quot;http://backupsy.com/&quot;&gt;backupsy.com&lt;/a&gt; and sign up for their 250GB storage, 512mb ram 1,000GB bandwidth plan using coupon code &quot;BIGDADDY&quot; to get all this for $5 a month (50% off). &amp;nbsp;I opted for the automatic OS install but apparently their automatic OS install wasn&#39;t working correctly so I installed the OS myself (Ubuntu 12.04).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;Once all this is finished, log into the box using the web console. &amp;nbsp;I had to use firefox because the Java applet needed to do this doesn&#39;t work in chrome. &amp;nbsp;Log in as the user you created during set up and install an ssh server with &quot;sudo apt-get install openssh-server&quot;. &amp;nbsp;You might want to read up on &lt;a href=&quot;https://help.ubuntu.com/community/SSH/OpenSSH/Configuring&quot; target=&quot;_blank&quot;&gt;securing an ssh server&lt;/a&gt;, and configure at least disabling root login via ssh.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;Next lets get lamp, php and ownCloud installed following the instructions &lt;a href=&quot;https://www.digitalocean.com/community/articles/how-to-setup-owncloud-5-on-ubuntu-12-10&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;. &amp;nbsp;When you&#39;re done you should have a working ownCloud install and an admin user set up.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;I wanted to be able to sync my current ~/Dropbox folder, and also upload all of my digital music without syncing the music back to my computer. &amp;nbsp;Luckily ownCloud supports the option to only sync specific folders with remote ones.&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;Install the &lt;a href=&quot;http://www.blogger.com/&quot;&gt;&lt;span id=&quot;goog_918835802&quot;&gt;&lt;/span&gt;ownCloud sync client&lt;span id=&quot;goog_918835803&quot;&gt;&lt;/span&gt;&lt;/a&gt;, and create a folder that you want to sync, I created an ownCloud folder in my home folder. &amp;nbsp;And instead of syncing data with the remote root folder, choose and create a new remote folder to sync with. &amp;nbsp;If you sync with the remote root folder everything will sync (music, photos) and you will only be able to create one sync.&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;You also might want to check out the &lt;a href=&quot;http://apps.owncloud.com/&quot; target=&quot;_blank&quot;&gt;ownCloud apps&lt;/a&gt; that are available to use. &amp;nbsp;I will probably end up creating an account for my wife on my ownCloud and installing the &lt;a href=&quot;http://apps.owncloud.com/content/show.php/Internal+Messages?content=154784&quot; target=&quot;_blank&quot;&gt;internal messages app&lt;/a&gt; for us to use. &amp;nbsp;And giving her an account will allow her to have her own storage and music service as well.&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Verdana, sans-serif;&quot;&gt;I&#39;ve copied my entire dropbox folder into my ownCloud folder and I&#39;m waiting for that to sync. &amp;nbsp;After that I&#39;ll begin uploading my music and testing out the streaming both to my laptop and my android. &amp;nbsp;As long as this all works out ok I&#39;ll be dropping both Spotify and my dropbox account for this. &amp;nbsp;Next I&#39;ll also be looking into enabling SSL and maybe developing my own addons / apps.&lt;/span&gt;&lt;/div&gt;</description>
+        <pubDate>Sun, 21 Jul 2013 17:17:00 -0500</pubDate>
+        <link>http://fridgerator.github.io/2013/07/21/goodbye-dropbox-and-spotify-hello/</link>
+        <guid isPermaLink="true">http://fridgerator.github.io/2013/07/21/goodbye-dropbox-and-spotify-hello/</guid>
+        
+        <category>open source</category>
+        
+        <category>ubuntu</category>
+        
+        <category>backupsy</category>
+        
+        <category>spotify</category>
+        
+        <category>dropbox</category>
+        
+        <category>owncloud</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>HOWTO: Set up a Rails 3.2.11 (ruby 1.9.3) app on a dreamhost shared account</title>
+        <description>I recently took advantage of a sweet deal at &lt;a href=&quot;http://www.dreamhost.com/&quot; target=&quot;_blank&quot;&gt;Dreamhost&lt;/a&gt; and signed up for a year of their &quot;Shared Hosting&quot;.  Being a Railsist (??) I wanted a temporary domain / server where I could throw up my random &lt;a href=&quot;http://rubyonrails.org/&quot; target=&quot;_blank&quot;&gt;Rails&lt;/a&gt; / &lt;a href=&quot;http://rack.github.com/&quot; target=&quot;_blank&quot;&gt;Rack&lt;/a&gt; projects. &amp;nbsp;Its definitely doable, but there is a tint of hacking involved.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://snag.gy/Agsrl.jpg&quot; imageanchor=&quot;1&quot; style=&quot;clear: right; float: right; margin-bottom: 1em; margin-left: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://snag.gy/Agsrl.jpg&quot; /&gt;&lt;/a&gt;&lt;/div&gt;First off, go into your&amp;nbsp;&lt;a href=&quot;http://panel.dreamhost.com/&quot; target=&quot;_blank&quot;&gt;panel&lt;/a&gt; and click &quot;Manage Domains&quot; section and edit the domain you want to run rails on. &amp;nbsp;Scroll down and check the Passenger checkbox since we&#39;ll be using their pre-installed passenger setup to serve up our applications. &amp;nbsp;Since I will be using &lt;a href=&quot;https://github.com/capistrano/capistrano&quot; target=&quot;_blank&quot;&gt;Capistrano&lt;/a&gt; to deploy my applications I also changed the &#39;Web directory&#39; to /home/username/domain.name/current/public. &amp;nbsp;This might not be necessary for you depending on your setup.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://snag.gy/aPUaD.jpg&quot; imageanchor=&quot;1&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;64&quot; src=&quot;http://snag.gy/aPUaD.jpg&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;Next up we&#39;re going to want to enable shell access so you can deploy your application and install some other required software. &amp;nbsp;Go to &#39;Manager Users&#39; section of the panel and click &#39;edit&#39; on the user you want to allow ssh access to. &amp;nbsp;Change the &#39;account type&#39; to Shell account instead of the default FTP account.&lt;br /&gt;&lt;br /&gt;Now create a mysql database (unless you plan on using sqlite). &amp;nbsp;Click into &quot;Mysql Database&quot; and add a new one. &amp;nbsp;Note that you will not be able to connect to the database via localhost or the socket file, so you will have to add whatever hostname you chose to your production database.yml file.&lt;br /&gt;&lt;br /&gt;You&#39;ll see a warning that it might take 5-10 minutes for the settings to change, one that happens then you can proceed.&lt;br /&gt;&lt;br /&gt;By default, Dreamhost only has Ruby 1.8.7 installed :( &amp;nbsp;Go ahead and ssh into your shell and we&#39;ll start by installing &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; and the latest ruby. &amp;nbsp;Run the command &lt;code&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/span&gt;&lt;/code&gt; to install both in one shot. &amp;nbsp;I usually do a &lt;code&gt;rvm use default 1.9.3&lt;/code&gt; just be sure I&#39;ll be using the correct ruby version, but this might not be necessary.&lt;br /&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;When thats finished go ahead and insall the Rails, mysql and therubyracer gems&amp;nbsp;&lt;code&gt;gem install rails mysql2 therubyracer&lt;/code&gt;.&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;We&#39;re also going to want to install &lt;a href=&quot;http://node.js/&quot; target=&quot;_blank&quot;&gt;node.js&lt;/a&gt; for our javascipt runtime and compilation. &amp;nbsp;In your home directory, create a downloads folder &lt;code&gt;mkdir downloads; cd downloads&lt;/code&gt; . &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;&amp;nbsp; We&#39;re also going to need a ~/usr/local/bin dir to store the node binaries &lt;code&gt;mkdir -p ~/usr/local/bin&lt;/code&gt;. Grab the latest node.js source from github &lt;code&gt;git clone git://github.com/ry/node.git; cd node&lt;/code&gt;. &amp;nbsp;Make that shit &lt;code&gt;./configure --prefix=~/usr/local; make; make install&lt;/code&gt; and add our the bin directory we created to the environment path by adding &lt;code&gt;export PATH=$PATH:/home/USERNAME/usr/local/bin&lt;/code&gt; to both .bashrc and .bash_profile replacing USERNAME with your account username. &amp;nbsp;Now close your connection and re-connect to check if node installed correctly with &lt;code&gt;node -v&lt;/code&gt; .&lt;/span&gt; &lt;br /&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot;background-color: white; font-size: inherit; line-height: 22.390625px;&quot;&gt;You now have an up to date Rails server with the latest Ruby and Node versions installed.&lt;/span&gt;</description>
+        <pubDate>Sat, 26 Jan 2013 18:03:00 -0600</pubDate>
+        <link>http://fridgerator.github.io/2013/01/26/howto-set-up-rails-3211-ruby-193-app-on/</link>
+        <guid isPermaLink="true">http://fridgerator.github.io/2013/01/26/howto-set-up-rails-3211-ruby-193-app-on/</guid>
+        
+        <category>dreamhost</category>
+        
+        <category>rails</category>
+        
+        <category>ruby</category>
+        
+        <category>linux</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Example content</title>
+        <description>&lt;div class=&quot;message&quot;&gt;
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+&lt;/div&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+
+&lt;h2&gt;Inline HTML elements&lt;/h2&gt;
+
+&lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
+&lt;li&gt;Citations, like &lt;cite&gt;&amp;mdash; Mark otto&lt;/cite&gt;, should use &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
+
+&lt;h2&gt;Heading&lt;/h2&gt;
+
+&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
+
+&lt;h3&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
+
+&lt;h3&gt;Gists via GitHub Pages&lt;/h3&gt;
+
+&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.&lt;/p&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
+
+&lt;h3&gt;Lists&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
+&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
+&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
+&lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
+&lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
+  &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
+
+  &lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt;
+  &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
+
+  &lt;dt&gt;JavaScript (JS)&lt;/dt&gt;
+  &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;h3&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x400&quot; alt=&quot;placeholder&quot; title=&quot;Large example image&quot;&gt;
+&lt;img src=&quot;http://placehold.it/400x200&quot; alt=&quot;placeholder&quot; title=&quot;Medium example image&quot;&gt;
+&lt;img src=&quot;http://placehold.it/200x200&quot; alt=&quot;placeholder&quot; title=&quot;Small example image&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Upvotes&lt;/th&gt;
+      &lt;th&gt;Downvotes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Totals&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Charlie&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Feb 2012 00:00:00 -0600</pubDate>
+        <link>http://fridgerator.github.io/2012/02/07/example-content/</link>
+        <guid isPermaLink="true">http://fridgerator.github.io/2012/02/07/example-content/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

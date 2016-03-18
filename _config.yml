@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+gems: 			  [jekyll-paginate, jekyll-gist]
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Web / Tech / Beer blog
+tagline:          'some tagline'
+description:      'A Blog about web technologies, code, server applications, beer, etc/'
+url:              http://fridgerator.github.io
+
+author:
+  name:           'Nick Franken'
+  url:            https://twitter.com/fridgamarator
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/fridgerator
