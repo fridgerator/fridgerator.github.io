@@ -18,7 +18,7 @@ If you want to check out the source for this project, i've stuck it in this repo
 
 Generating the project was easy enough, crystal has a built in project generator which creates a basic project structure for us `crystal init app kemal_test`.  Then add the require dependencies to the shards.yml file (`kemal`, `active_record`, and `postgres_adapter`).  [Shards](https://github.com/crystal-lang/shards) is a dependency manager similar to ruby gems and the `shard.yml` file looks like a cross between a `Gemfile` and a `package.json` file.  Pretty slick, the crystal project is in alpha stage still and already 13x easier to set up than any node.js application.
 
-For data / domain models, I'm using [active_record.cr](https://github.com/waterlink/active_record.cr).
+For data / domain models, I'm using [active_record.cr](https://github.com/waterlink/active_record.cr).  I didn't find anything akin to rails DB rake tasks or migrations, so I created the database and tables manually in the `psql` interface.
 
 ```ruby
 class Post < ActiveRecord::Model
@@ -56,3 +56,28 @@ end
 ```
 
 Kemal serves up static files out of `/public`, so I threw my main.js, main.css and angular template files in that directory.
+
+So far I have everything I set out for: simple rails-like structure, ruby syntax, insane server response times (most were in the hundreds of microseconds). I'm 100% satisfied and will definitely continue to dink around with Crystal/Kemal in the future.
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//webtechbeerblog.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
