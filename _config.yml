@@ -1,11 +1,7 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
 
 gems: 			  [jekyll-paginate, jekyll-gist]
-
-# Permalinks
-permalink:        pretty
 
 # Setup
 title:            Web / Tech / Beer blog
