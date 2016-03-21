@@ -2,6 +2,9 @@
 layout: post
 title:  "Crystal and Kemal"
 date:   2016-03-20 20:54:42 -0600
+comments: true
+disqus_url: "http://fridgerator.github.io/2016/03/20/crystal-and-kemal.html"
+disqus_identifier: "/2016/03/20/crystal-and-kemal.html"
 ---
 I've had my eye on the [crystal programming language](http://crystal-lang.org/) for a while now, and I have to say I'm pretty excited about it. Ruby syntax combined with the speed of a statically typed compiled language, common now.  It's compiler is now bootstrapped and [benchmarks](https://github.com/kostya/benchmarks) performances are impressive (yeah I know, benchmark scores don't matter).  I would suggest watching the video on the project's own [Bountysource page](https://salt.bountysource.com/teams/crystal-lang) for a more in-depth look into the language itself.  Here I plan on playing around mostly with the [Kemal framework](http://kemalcr.com/) (seriously those benchmarks though).
 
@@ -63,28 +66,3 @@ end
 Kemal serves up static files out of `/public`, so I threw my main.js, main.css and angular template files in that directory.
 
 So far I have everything I set out for: simple rails-like structure, ruby syntax, insane server response times (most were in the hundreds of microseconds). I'm 100% satisfied and will definitely continue to dink around with Crystal/Kemal in the future.
-
-{% if post.comments %}
-<div id="disqus_thread"></div>
-<script>
-/**
-* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-*/
-
-var disqus_config = function () {
-this.page.url = 'http://fridgerator.github.io/2016/03/20/crystal-and-kemal.html'; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '/2016/03/20/crystal-and-kemal.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//webtechbeerblog.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
