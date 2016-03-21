@@ -2,29 +2,20 @@
 layout: page
 title: About
 ---
+<center>
+    <img src="http://i.imgur.com/MAU3ebd.jpg" />
+</center>
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+My name is Nick Franken and I am a Web Software Developer at [LI-COR](https://www.licor.com/) in Lincoln, NE (former Lead Software Engineer at [Firespring](http://www.firespring.com/)).  I enjoy working with Ruby On Rails applications, Linux server configurations (mostly Amazon AWS), front-end technologies (AngularJS, BackboneJS, etc), cross platform applications using Apache Cordova and many other things.  ...Also IPA enthusiast.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+<h2>Purpose</h2>
 
-There are currently two themes built on Poole:
+I am very fortunate that my full-time job is also my hobby.  I spend a good chunk of my free time exploring new technologies and frameworks, writing proof-of-concepts and personal projects.  I figured I should start documenting some of this, and hopefully some of it will be usefull to someone else.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+<h2>Contact</h2>
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+[github](https://github.com/fridgerator)
 
-## Setup
+[twitter](https://twitter.com/fridgamarator)
 
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[google+](https://plus.google.com/u/0/106013093477072054639)
