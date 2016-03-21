@@ -4,9 +4,9 @@ markdown:         kramdown
 gems: 			  [jekyll-paginate, jekyll-gist]
 
 # Setup
-title:            Web / Tech / Beer blog
+title:            Web / Tech / Beer
 tagline:          'some tagline'
-description:      'A Blog about web technologies, code, server applications, beer, etc/'
+description:      'Web technologies, code, server applications, beer, etc/'
 url:              http://fridgerator.github.io
 
 author:

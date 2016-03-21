@@ -13,3 +13,12 @@
 	float: right;
 	display: inline-block;
 }
+
+img[alt="benchmarks"]{
+	width: 500px;
+}
+
+img[alt="beer"]{
+	float: right;
+	height: 200px;
+}
