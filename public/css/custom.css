@@ -22,3 +22,7 @@ img[alt="beer"]{
 	float: right;
 	height: 200px;
 }
+
+img[alt="beer again"]{
+	height: 200px;
+}
