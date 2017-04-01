@@ -26,3 +26,9 @@ img[alt="beer"]{
 img[alt="beer again"]{
 	height: 200px;
 }
+
+img[alt="more beer"]{
+	float: right;
+	height: 300px;
+	padding-left: 20px;
+}
