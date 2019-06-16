@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  ruby:
+    build: .
+    volumes:
+      - ./_includes:/app/_includes
+      - ./_layouts:/app/_layouts
+      - ./_posts:/app/_posts
+      - ./_sass:/app/_sass
+      - ./.sass-cache:/app/.sass-cache
+      - ./css:/app/css
+      - ./public:/app/public
+      - ./_config.yml:/app/_config.yml
+      - ./404.html:/app/404.html
+      - ./about.md:/app/about.md
+      - ./atom.xml:/app/atom.xml
+      - ./CNAME:/app/CNAME
+      - ./feed.xml:/app/feed.xml
+      - ./index.html:/app/index.html
+      - ./LICENSE.md:/app/LICENSE.md
+      - ./README.md:/app/README.md
+    ports:
+      - "4000:4000"
+    command: bundle exec jekyll serve

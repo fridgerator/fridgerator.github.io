@@ -32,3 +32,7 @@ img[alt="more beer"]{
 	height: 300px;
 	padding-left: 20px;
 }
+
+img[alt="hazy beer"]{
+	height: 300px;
+}

@@ -20,3 +20,5 @@ version:          2.0.0
 
 github:
   repo:           https://github.com/fridgerator
+
+host:             0.0.0.0
