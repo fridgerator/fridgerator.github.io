@@ -27,7 +27,7 @@ A *somewhat* similar concept exists for Python - [Embedding Python](https://docs
 
 #### The Code
 
-Full source code available [here](https://github.com/fridgerator/node-python)
+Full source code available [here](https://github.com/fridgerator/PyNode)
 
 First thing in the [`Initialize` function](https://github.com/fridgerator/node-python/blob/master/main.cc#L48) we set up some search paths so Python can find the interpreter and required libraries and pass them to [`Py_SetPath`](https://docs.python.org/3/c-api/init.html#c.Py_SetPath).  Next we [initialize the Python interpreter](https://docs.python.org/3/c-api/init.html#c.Py_Initialize), and append the current directory Python's system path so it can found our local python module.  Finally we can tell Python to decode our `tools.py` file and import it so we can call it later on.
 
