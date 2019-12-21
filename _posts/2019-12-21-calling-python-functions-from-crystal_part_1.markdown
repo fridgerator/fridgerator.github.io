@@ -12,7 +12,7 @@ Ever wanted to call Python functions from Crystal?  Me either, but I'll show you
 ![belching beaver](https://i.imgur.com/n4E4nWk.jpg)
 Belching Beaver Mango IPA is really good, would recommend.
 
-Unlike [calling python functions from node](http://localhost:4000/2019/06/14/nodejs-and-python-interoperability.html) via c++ bindings, Crystal can only [bind to c libraries](https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/).  So that's exactly what I'm going to do.  Build a c library that calls into Python's internal functions and returns some structs and values that can be read in by Crystal.
+Unlike [calling python functions from node](https://fridgerator.github.io/2019/06/14/nodejs-and-python-interoperability.html) via c++ bindings, Crystal can only [bind to c libraries](https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/).  So that's exactly what I'm going to do.  Build a c library that calls into Python's internal functions and returns some structs and values that can be read in by Crystal.
 
 Just like [PyNode](https://github.com/fridgerator/pynode), there is some boilerplate stuff we have to do to initialize python.  We have to [start the python interpreter](https://github.com/fridgerator/GlassySnek/blob/master/c/main.c#L34) by calling `Py_Initialize()`.  Also a [utility function](https://github.com/fridgerator/GlassySnek/blob/master/c/main.c#L44) for extending pythons search paths, so that it finds our python 3rd party libraries.  Finally, a function to [open our python file](https://github.com/fridgerator/GlassySnek/blob/master/c/main.c#L54).
 
